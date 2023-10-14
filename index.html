@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" href="Images/cal_img.jpg" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="background">
+      <button id="btnMode" onclick="changeMode()" class="button1">Mode</button>
+      <div id="heading">
+      <p>Calculator</p>
+      </div>
+      <div id ="divCalculator" class="calculator">
+        <!--<div class="mode" onclick="changeMode"></div>
+        <span class="fa-solid fa-moon"></span>-->
+        
+        <form>
+          <div class="display">
+            <input type="text" name="display" />
+            <!-- <input type="text" name="display" /> -->
+          </div>
+          <div>
+            <input
+              type="button"
+              value="AC"
+              onclick="clearDisplay()"
+              class="operator"
+            />
+            <input
+              type="button"
+              value="DEL"
+              onclick="deleteDisplay()"
+              class="operator"
+            />
+            <input
+              type="button"
+              value="."
+              onclick="numPress('.')"
+              class="operator"
+            />
+            <input
+              type="button"
+              value="/"
+              onclick="numPress('/')"
+              class="operator"
+            />
+          </div>
+          <div>
+            <input type="button" value="7" onclick="numPress('7') " />
+            <input type="button" value="8" onclick="numPress('8') " />
+            <input type="button" value="9" onclick="numPress('9') " />
+            <input
+              type="button"
+              value="*"
+              onclick="numPress('*') "
+              class="operator"
+            />
+          </div>
+          <div>
+            <input type="button" value="4" onclick="numPress('4') " />
+            <input type="button" value="5" onclick="numPress('5') " />
+            <input type="button" value="6" onclick="numPress('6')" />
+            <input
+              type="button"
+              value="-"
+              onclick="numPress('-') "
+              class="operator"
+            />
+          </div>
+          <div>
+            <input type="button" value="1" onclick="numPress('1') " />
+            <input type="button" value="2" onclick="numPress('2') " />
+            <input type="button" value="3" onclick="numPress('3')" />
+            <input
+              type="button"
+              value="+"
+              onclick="numPress('+')"
+              class="operator"
+            />
+          </div>
+          <div>
+            <input type="button" value="00" onclick="numPress('00') " />
+            <input type="button" value="0" onclick="numPress('0') " />
+            <input
+              type="button"
+              value="="
+              onclick="calculate()"
+              class="equal operator"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
